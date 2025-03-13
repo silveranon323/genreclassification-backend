@@ -28,7 +28,7 @@ GENRES = [
 ]
 
 
-@app.route("/predict", methods=["POST"])
+@app.route("/api/predict", methods=["POST"])
 def predict():
     if "file" not in request.files:
         print("No file part received")
